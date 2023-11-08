@@ -15,13 +15,13 @@
                 color: #fff; /* white text color */
             }
             header {
-                background-color: #700000; /* darker cardinal red */
+                background-color: #fff; /* darker cardinal red */
                 padding: 20px;
                 text-align: center;
                 position: relative;
             }
             nav {
-                background-color: #700000; /* darker cardinal red */
+                background-color: #800000; /* darker cardinal red */
                 color: #fff;
                 text-align: center;
                 padding: 10px;
@@ -32,6 +32,7 @@
                 padding: 0 10px;
             }
             section {
+                background-color:#800000; /* darker cardinal red */
                 padding: 20px;
                 display: flex;
             }
@@ -52,7 +53,13 @@
                 position: absolute;
                 top: 20px;
                 right: 20px;
-                width: 100px;
+                width: 400px; /* Adjusted width */
+                height: auto; /* Maintain aspect ratio */
+
+            }
+            .centered-image {
+                display: block;
+                margin: auto;
             }
         </style>
     </head>
@@ -68,13 +75,31 @@
         </nav>
         <section>
             <div class="column">
-                <h2>About Us</h2>
-                <p>Robert M. Curry is an assistant professor of industrial engineering at the University of Arkansas, where he leads a dynamic research group focused on optimization and network flow analysis. With a passion for addressing real-world challenges, Dr. Curry's work delves into the intricate intersections of industrial systems and mathematical modeling, striving to enhance the efficiency and resilience of complex networks. His research interests encompass the development of cutting-edge algorithms for solving large-scale optimization problems, with a particular emphasis on applications in transportation logistics, supply chain management, and telecommunications. Committed to fostering innovation in the field, Dr. Curry actively collaborates with industry partners and mentors aspiring engineers, fostering a new generation of problem-solvers and thought leaders in the realm of industrial engineering.</p>
+                <h2>About Me</h2>
+                <img src="https://campusdata.uark.edu/resources/images/FacultyStaffProfile/rmcurry.jpg?w=240" alt="Image in the first section" class="centered-image" >
+                <p>Before joining the University of Arkansas, Dr. Curry was an assistant professor in the Mathematics Department at the United States Naval Academy.
+                
+                His research involves methodology for modeling and solving large-scale network optimization models having applications in defense settings, sensor networks, and cyber-physical infrastructure settings. His work has been published in high-quality journals, such as IISE Transactions, Networks and Naval Research Logistics, and he has been sponsored by the Office of Naval Research.
+                
+                His teaching experience and interests lie in linear and integer programming, network optimization modeling and algorithms, and applied probability and statistics.</p>
                 <a href="research_paper.pdf">Download Research Paper (PDF)</a>
-                <img src="https://via.placeholder.com/300" alt="Image in the first section">
+                    
             </div>
             <div class="column">
-                <h2>Publications of Robert M. Curry</h2>
+                <h2>Research Expertise</h2>
+                <ul>
+                    <p> Large-scale Network Optimization</p>
+                        <ul>
+                            <p> Column Generation </p>
+                            <p> Branch-and-Price </p>
+                            <p> Other Decomposition Methods </p>
+                            
+                        </ul>
+                    <p> Integer Programming </p>
+                    <p> Linear Programming </p>
+                    
+                </ul>
+                <h2>Research Interests</h2>
                 <ul>
                     <li><a href="https://example.com/publication1">Optimization Strategies for Network Flows in Large-Scale Enterprises</a></li>
                     <li><a href="https://example.com/publication2">Advanced Techniques in Network Flow Optimization for Telecommunication Systems</a></li>
