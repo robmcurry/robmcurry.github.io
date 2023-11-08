@@ -1,0 +1,100 @@
+<<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My Website</title>
+        <style>
+            /* CSS styles */
+            body {
+                font-family: Times New Roman, sans-serif;
+                margin: 0;
+                padding: 0;
+                background-color: #dc143c; /* cardinal red */
+                color: #fff; /* white text color */
+            }
+            header {
+                background-color: #700000; /* darker cardinal red */
+                padding: 20px;
+                text-align: center;
+                position: relative;
+            }
+            nav {
+                background-color: #700000; /* darker cardinal red */
+                color: #fff;
+                text-align: center;
+                padding: 10px;
+            }
+            nav a {
+                color: #fff;
+                text-decoration: none;
+                padding: 0 10px;
+            }
+            section {
+                padding: 20px;
+                display: flex;
+            }
+            .column {
+                flex: 1;
+                margin: 0 10px;
+            }
+            footer {
+                background-color: #800000; /* darker cardinal red */
+                color: #fff;
+                text-align: center;
+                padding: 10px;
+                position: absolute;
+                bottom: 0;
+                width: 100%;
+            }
+            .logo {
+                position: absolute;
+                top: 20px;
+                right: 20px;
+                width: 100px;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>Welcome to My Website</h1>
+            <img class="logo" src="https://via.placeholder.com/100" alt="Logo">
+        </header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="#">Contact</a>
+        </nav>
+        <section>
+            <div class="column">
+                <h2>About Us</h2>
+                <p>Robert M. Curry is an assistant professor of industrial engineering at the University of Arkansas, where he leads a dynamic research group focused on optimization and network flow analysis. With a passion for addressing real-world challenges, Dr. Curry's work delves into the intricate intersections of industrial systems and mathematical modeling, striving to enhance the efficiency and resilience of complex networks. His research interests encompass the development of cutting-edge algorithms for solving large-scale optimization problems, with a particular emphasis on applications in transportation logistics, supply chain management, and telecommunications. Committed to fostering innovation in the field, Dr. Curry actively collaborates with industry partners and mentors aspiring engineers, fostering a new generation of problem-solvers and thought leaders in the realm of industrial engineering.</p>
+                <a href="research_paper.pdf">Download Research Paper (PDF)</a>
+                <img src="https://via.placeholder.com/300" alt="Image in the first section">
+            </div>
+            <div class="column">
+                <h2>Publications of Robert M. Curry</h2>
+                <ul>
+                    <li><a href="https://example.com/publication1">Optimization Strategies for Network Flows in Large-Scale Enterprises</a></li>
+                    <li><a href="https://example.com/publication2">Advanced Techniques in Network Flow Optimization for Telecommunication Systems</a></li>
+                    <li><a href="https://example.com/publication3">Efficient Algorithms for Solving Optimization Problems in Transportation Networks</a></li>
+                    <li><a href="https://example.com/publication4">Applications of Network Flow Optimization in Supply Chain Management</a></li>
+                    <li><a href="https://example.com/publication5">Optimization Models for Enhancing Efficiency in Network Design</a></li>
+                </ul>
+            </div>
+        </section>
+        <section>
+            <h2>Contact Us</h2>
+            <p>For any inquiries, please reach out to us via the following methods:</p>
+            <ul>
+                <li>Email: example@example.com</li>
+                <li>Phone: 123-456-7890</li>
+                <li>Address: 123 Street, City, State, Country</li>
+            </ul>
+        </section>
+        <footer>
+            <p>&copy; 2023 MyWebsite.com</p>
+        </footer>
+    </body>
+    </html>
