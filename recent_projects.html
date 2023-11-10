@@ -1,81 +1,96 @@
-
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Robert M. Curry</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-        header {
-            background-color: #f2f2f2;
-            padding: 20px;
-            text-align: center;
-        }
-        nav {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 10px;
-        }
-        nav a {
-            color: #fff;
-            text-decoration: none;
-            padding: 0 10px;
-        }
-        section {
-            padding: 20px;
-        }
-        footer {
-            background-color: #332;
-            color: #fff;
-            text-align: center;
-            padding: 10px;
-            position: absolute;
-            bottom: 0;
-            width: 100%;
-        }
-    </style>
-</head>
-<body>
-    <header>
-        <h1>Welcome to My Website</h1>
-    </header>
-    <nav>
-        <a href="#">About Me</a>
-        <a href="#">Research</a>
-        <a href="#">Teaching</a>
-        <a href="#">Publications</a>
-        <a href="#">CV</a>
-        <a href="#">Present Interests</a>
-    </nav>
-    <section>
-        <h2>About Me</h2>
-        <p>This is a simple HTML website template. You can modify it to suit your needs.</p>
-    </section>
-    <section>
-        <h2>About Me</h2>
-        <p>This is a simple HTML website template. You can modify it to suit your needs.</p>
-    </section>
-    <section>
-            <h2>Contact Us</h2>
-            <p>For any inquiries, please reach out to us via the following methods:</p>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My Website</title>
+        <style>
+            /* CSS styles */
+            body {
+                font-family: Times New Roman, sans-serif;
+                margin: 0;
+                padding: 0;
+                background-color: #dc143c; /* cardinal red */
+                color: #fff; /* white text color */
+            }
+            header {
+                background-color: #fff; /* darker cardinal red */
+                padding: 20px;
+                text-align: center;
+                position: relative;
+                color: #000000; /* white text color */
+            }
+            nav {
+                background-color: #800000; /* darker cardinal red */
+                color: #fff;
+                text-align: center;
+                padding: 10px;
+            }
+            nav a {
+                color: #fff;
+                text-decoration: none;
+                padding: 0 10px;
+            }
+            section {
+                background-color:#800000; /* darker cardinal red */
+                padding: 20px;
+                display: flex;
+            }
+            .column {
+                flex: 1;
+                margin: 0 10px;
+            }
+            footer {
+                background-color: #800000; /* darker cardinal red */
+                color: #fff;
+                text-align: center;
+                padding: 10px;
+                position: absolute;
+                bottom: 0;
+                width: 100%;
+            }
+            .logo {
+                position: absolute;
+                top: 20px;
+                right: 20px;
+                width: 350px; /* Adjusted width */
+                height: auto; /* Maintain aspect ratio */
+
+            }
+            .centered-image {
+                display: block;
+                margin: auto;
+                width: 150px; /* Adjusted width */
+                height: auto; /* Maintain aspect ratio */
+            }
+            .centered-image-other {
+                display: block;
+                margin: auto;
+                width: 450px; /* Adjusted width */
+                height: auto; /* Maintain aspect ratio */
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <img class="centered-image-other" src="https://brand.uark.edu/_resources/images/UA_Logo_Horizontal.jpg" alt="Logo">
+            <h1 style="font-size: 50px;"> Curry Network Optimization Research Group</h1>
+        </header>
+        <nav>
+            <a  style="font-size: 27px;" href="index.html">About</a>
+            <a   style="font-size: 27px;"  href="teaching.html">Teaching</a>
+            <a   style="font-size: 27px;"  href="research.html">Research</a>
+            <a  style="font-size: 27px;"  href="publications.html">Publications</a>
+            <a  style="font-size: 27px;"  href="recent_projects.html">Recent Projects</a>
+            <a  style="font-size: 27px;"  href="team_members.html">Team Members</a>
+        </nav>
+        <section>
+<!--            <h2  style="font-size: 50px;"> Recent Projects </h2>-->
             <ul>
-                <li>Email: example@example.com</li>
-                <li>Phone: 123-456-7890</li>
-                <li>Address: 123 Street, City, State, Country</li>
+                <h3 style="font-size: 25px;"> Models and Algorithms for the Maximum Value Dynamic Network Flow Problem </h3>
+            <p style="font-size: 20px;"> Abstract: Various applications require dynamic flow solutions characterized by a schedule of network flows consecutively transmitted over a sequence of successive periods. For these schedules, we assume flows transmit via arcs during periods while flows reside at nodes from one period to the next. Within this context, we introduce the Maximum Value Dynamic Network Flow Problem (MVDFP) in which we seek to maximize the cumulative value of a non-simultaneous network flow schedule that accumulates node value whenever some minimum amount of flow resides at a node between periods. For solving the MVDFP, we first introduce a large mixed-integer program (MIP). As this MIP can become computationally-expensive for large networks, we also present a computationally-effective heuristic that sequentially solves a series of smaller, more manageable MIPs. This heuristic approach determines a high-quality solution significantly faster than the MIP obtains an optimal solution by dividing the full network flow schedule into a sequence of consecutive shorter network flow subschedules. In many cases this approach produces an optimal solution in a fraction of the MIP's computational time. We present extensive computational results to highlight our heuristic's efficacy and discuss future research avenues. </p>
+                
             </ul>
         </section>
-    <footer>
-        <p> Robert M. Curry</p>
-        <p> Department of Industrial Engineering</p>
-        <p> University of Arkansas</p>
-    </footer>
-</body>
-</html>
-
+    </html>

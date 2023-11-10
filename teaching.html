@@ -1,81 +1,109 @@
-
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Robert M. Curry</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-        header {
-            background-color: #f2f2f2;
-            padding: 20px;
-            text-align: center;
-        }
-        nav {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 10px;
-        }
-        nav a {
-            color: #fff;
-            text-decoration: none;
-            padding: 0 10px;
-        }
-        section {
-            padding: 20px;
-        }
-        footer {
-            background-color: #332;
-            color: #fff;
-            text-align: center;
-            padding: 10px;
-            position: absolute;
-            bottom: 0;
-            width: 100%;
-        }
-    </style>
-</head>
-<body>
-    <header>
-        <h1>Welcome to My Website</h1>
-    </header>
-    <nav>
-        <a href="#">About Me</a>
-        <a href="#">Research</a>
-        <a href="#">Teaching</a>
-        <a href="#">Publications</a>
-        <a href="#">CV</a>
-        <a href="#">Present Interests</a>
-    </nav>
-    <section>
-        <h2>About Me</h2>
-        <p>This is a simple HTML website template. You can modify it to suit your needs.</p>
-    </section>
-    <section>
-        <h2>About Me</h2>
-        <p>This is a simple HTML website template. You can modify it to suit your needs.</p>
-    </section>
-    <section>
-            <h2>Contact Us</h2>
-            <p>For any inquiries, please reach out to us via the following methods:</p>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My Website</title>
+        <style>
+            /* CSS styles */
+            body {
+                font-family: Times New Roman, sans-serif;
+                margin: 0;
+                padding: 0;
+                background-color: #dc143c; /* cardinal red */
+                color: #fff; /* white text color */
+            }
+            header {
+                background-color: #fff; /* darker cardinal red */
+                padding: 20px;
+                text-align: center;
+                position: relative;
+                color: #000000; /* white text color */
+            }
+            nav {
+                background-color: #800000; /* darker cardinal red */
+                color: #fff;
+                text-align: center;
+                padding: 10px;
+            }
+            nav a {
+                color: #fff;
+                text-decoration: none;
+                padding: 0 10px;
+            }
+            section {
+                background-color:#800000; /* darker cardinal red */
+                padding: 20px;
+                display: flex;
+            }
+            .column {
+                flex: 1;
+                margin: 0 10px;
+            }
+            footer {
+                background-color: #800000; /* darker cardinal red */
+                color: #fff;
+                text-align: center;
+                padding: 10px;
+                position: absolute;
+                bottom: 0;
+                width: 100%;
+            }
+            .logo {
+                position: absolute;
+                top: 20px;
+                right: 20px;
+                width: 350px; /* Adjusted width */
+                height: auto; /* Maintain aspect ratio */
+
+            }
+            .centered-image {
+                display: block;
+                margin: auto;
+                width: 150px; /* Adjusted width */
+                height: auto; /* Maintain aspect ratio */
+            }
+            .centered-image-other {
+                display: block;
+                margin: auto;
+                width: 450px; /* Adjusted width */
+                height: auto; /* Maintain aspect ratio */
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <img class="centered-image-other" src="https://brand.uark.edu/_resources/images/UA_Logo_Horizontal.jpg" alt="Logo">
+            <h1 style="font-size: 50px;"> Curry Network Optimization Research Group</h1>
+        </header>
+        <nav>
+            <a  style="font-size: 27px;" href="index.html">About</a>
+            <a   style="font-size: 27px;"  href="teaching.html">Teaching</a>
+            <a   style="font-size: 27px;"  href="research.html">Research</a>
+            <a  style="font-size: 27px;"  href="publications.html">Publications</a>
+            <a  style="font-size: 27px;"  href="recent_projects.html">Recent Projects</a>
+            <a  style="font-size: 27px;"  href="team_members.html">Team Members</a>
+        </nav>
+        <section>
+<!--            <h2 style="font-size: 50px;"> Teaching Experience </h2>-->
+            
             <ul>
-                <li>Email: example@example.com</li>
-                <li>Phone: 123-456-7890</li>
-                <li>Address: 123 Street, City, State, Country</li>
+                <h3 style="font-size: 30px;">Courses Taught at the University of Arkansas</h3>
+            
+                <ul>
+                    <li style="font-size: 20px;">Decision Support Systems for Industrial Engineers: Fall 2023</li>
+                </ul>
+            
+                <h3 style="font-size: 30px;"> Courses Taught at the United States Naval Academy, Mathematics Department </h3>
+
+                <ul>
+                    <li style="font-size: 20px;"> SA405 Advanced Mathematical Programming: Fall 2018, 2019, 2021, 2022 </li>
+                    <li style="font-size: 20px;"> SM316 Probability & Statistics for Engineering: Fall 2022, Spring 2021, 2020</li>
+                    <li style="font-size: 20px;"> SA463 Optimization Theory & Methods Spring 2022, 2021, 2020 </li>
+                    <li style="font-size: 20px;"> SA305 Linear Programming: Spring 2020, 2018 </li>
+                    <li style="font-size: 20px;"> SA403 Network & Graph Algorithms: Fall 2021 </li>
+                </ul>
             </ul>
         </section>
-    <footer>
-        <p> Robert M. Curry</p>
-        <p> Department of Industrial Engineering</p>
-        <p> University of Arkansas</p>
-    </footer>
-</body>
-</html>
-
+    </html>
